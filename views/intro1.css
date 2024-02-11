@@ -105,8 +105,8 @@ main {
   flex-direction: column;
 }
 
-.game{
-    z-index: 100;
+.game {
+  z-index: 100;
 }
 
 .card {
@@ -116,12 +116,12 @@ main {
   margin-top: 40px;
 }
 
-.card p{
-    color: #fff;
+.card p {
+  color: #fff;
 }
 
-.rectangles{
-    width: 100%;
+.rectangles {
+  width: 100%;
 }
 .rectangle1,
 .rectangle2,
@@ -134,19 +134,13 @@ main {
 .rectangle1 {
   margin-top: 40px;
   height: 13px;
-  
 }
 .rectangle2 {
   height: 35px;
-  
 }
 .rectangle3 {
   height: 60px;
-  
 }
 .rectangle4 {
   height: 150px;
-  
 }
-
-
