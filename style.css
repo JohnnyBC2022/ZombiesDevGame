@@ -113,9 +113,7 @@ button {
 
 button:hover {
   transform: translateY(2px);
-  color: #ff0156;
-  /* text-shadow: 5px 5px 0 #66ec7f;
-  border: 5px solid #ff0156; */
+  border: 5px solid #ff0156;
   box-shadow: 5px 5px 0 #66ec7f;
 }
 
