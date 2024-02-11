@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+
+body {
+  background-color: #00000d;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-family: "Pixelify Sans";
+}
+
+.logo {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header {
+  margin: 20px 36px;
+  height: 100px;
+  background: linear-gradient(
+    88deg,
+    #6e20f6 0.91%,
+    #00c6ee 25.73%,
+    #7707d7 65.84%,
+    #ff0156 96.39%
+  );
+  border-bottom: solid 20px transparent;
+  border-image: linear-gradient(
+      90deg,
+      #2f04ed 0%,
+      #00c6ee 28%,
+      #7707d7 65.84%,
+      #ff001d 100%
+    )
+    1;
+}
+header ul {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+header ul li {
+  list-style-type: square;
+  margin-right: 20px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+header ul li:hover {
+  color: #fff;
+}
+
+main {
+  margin: 0 36px;
+  border: 20px solid transparent;
+  border-image: linear-gradient(
+      76deg,
+      #ff0156 0.91%,
+      #7707d7 31.46%,
+      #00c6ee 71.57%,
+      #6e20f6 96.39%
+    )
+    1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-top: 40%;
+}
+main h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+button {
+  margin-top: 40px;
+  background-color: transparent;
+  color: #66ec7f;
+  font-size: 40px;
+  text-shadow: 5px 5px 0 #ff0156;
+  padding: 20px;
+  border: 5px solid #66ec7f;
+  box-shadow: 5px 5px 0 #ff0156;
+  font-family: "Pixelify Sans";
+}
+
+button:hover {
+  transform: translateY(2px);
+  color: #ff0156;
+  /* text-shadow: 5px 5px 0 #66ec7f;
+  border: 5px solid #ff0156; */
+  box-shadow: 5px 5px 0 #66ec7f;
+}
+
+.rectangle1,
+.rectangle2,
+.rectangle3,
+.rectangle4 {
+  background-color: #000023;
+  margin-bottom: 10px;
+}
+
+.rectangle1 {
+  margin-top: 40px;
+  height: 13px;
+  width: 100%;
+}
+.rectangle2 {
+  height: 35px;
+  width: 100%;
+}
+.rectangle3 {
+  height: 60px;
+  width: 100%;
+}
+.rectangle4 {
+  height: 150px;
+  width: 100%;
+}
