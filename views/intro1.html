@@ -26,25 +26,80 @@
     <div class="headerBorder"></div>
 
     <main>
-      <div class="progressBar"></div>
-      <div class="game">
-        <div class="card">
-          <img src="../img/img1.png" alt="" />
-          <p>
-            Después de horas y horas creando un videojuego y demasiados cafés
-            encima, creo que va siendo hora de acostarme. Mañana toca seguir
-            trabajando...
-          </p>
-          <button>CONTINUAR</button>
+      <section class="panel">
+<!-- Los controles los dejo de momento como imagen
+creo que acordamos que no iban a ser funcionales
+pero ahora tengo duda... -->
+        <div class="controls">
+          <img src="/img/controls.png" alt="controls">
         </div>
-      </div>
+        <div class="game">
+          <div class="progressBar">
+            <img src="/img/ZombieHead.png" alt="zombie head">
+            <img src="/img/Runner.png" alt="character">
+            <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+              <rect width="15" height="15" fill="#2692C3"/>
+            </svg>
+            <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+              <rect width="15" height="15" fill="#2692C3"/>
+            </svg>
+            <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+              <rect width="15" height="15" fill="#2692C3"/>
+            </svg>
+            <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+              <rect width="15" height="15" fill="#2692C3"/>
+            </svg>
+            <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+              <rect width="15" height="15" fill="#2692C3"/>
+            </svg>
+            <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+              <rect width="15" height="15" fill="#2692C3"/>
+            </svg>
+          </div>
+          <div class="card">
+            <img src="../img/card1.png" alt="" />
+            <div class="storyContent">
+              <p>
+                Después de horas y horas creando un videojuego y demasiados cafés
+                encima, creo que va siendo hora de acostarme. Mañana toca seguir
+                trabajando...
+              </p>
+              <button class="optionButton">[ CONTINUAR ]</button>
+            </div>
+  <!-- Este div es el que continúa la historia,
+  en css tiene un display: none;
+  Podemos hacerlo visible con js. -->
+            <div class="introStory2">
+              <div class="storyContent">
+                <p>
+                  Además tengo prácticamente acabado el juego,
+                  solo queda rematar cómo conseguir escapar y salir con vida de la casa…
+                  ¿Qué haces?
+                </p>
+                <button class="optionButton">A. Te acuestas tranquilamente en tu cama</button>
+                <button class="optionButton">B. Sigues programando, aún puedes acabarlo</button>
+              </div>
+            </div>
+          </div>
+          <div class="score">
+            <img src="/img/coffee.png" alt="">
+            <p>Coffee:</p>
+            <p id="points">1000</p>
+          </div>
+        </div>
+        <button class="reset">RESET</button>
+      </section>
 
-      <div class="rectangles">
+<!-- Dejo estos rectángulos comentados en HTML y css,
+lo he cambiado por una imagen de fondo similar
+para todas las pantallas -->
+      <!-- <div class="rectangles">
         <div class="rectangle1">ejemplo</div>
         <div class="rectangle2"></div>
         <div class="rectangle3"></div>
         <div class="rectangle4"></div>
-      </div>
+      </div> -->
+
     </main>
     <script src="script.js"></script>
   </body>

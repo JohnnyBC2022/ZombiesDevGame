@@ -10,7 +10,8 @@
 }
 
 body {
-  background-color: #00000d;
+  /* background-color: #00000d; */
+  background-image: url(/img/background.jpg);
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -27,23 +28,19 @@ body {
 header {
   margin: 20px 36px;
   height: 100px;
-  background: linear-gradient(
-    88deg,
-    #6e20f6 0.91%,
-    #00c6ee 25.73%,
-    #7707d7 65.84%,
-    #ff0156 96.39%
-  );
+  background: linear-gradient(88deg,
+      #6e20f6 0.91%,
+      #00c6ee 25.73%,
+      #7707d7 65.84%,
+      #ff0156 96.39%);
   border-bottom: solid 20px transparent;
-  border-image: linear-gradient(
-      90deg,
+  border-image: linear-gradient(90deg,
       #2f04ed 0%,
       #00c6ee 28%,
       #7707d7 65.84%,
-      #ff001d 100%
-    )
-    1;
+      #ff001d 100%) 1;
 }
+
 header ul {
   display: flex;
   gap: 20px;
@@ -51,6 +48,7 @@ header ul {
   align-items: center;
   height: 100%;
 }
+
 header ul li {
   list-style-type: square;
   margin-right: 20px;
@@ -65,14 +63,12 @@ header ul li:hover {
 main {
   margin: 0 36px;
   border: 20px solid transparent;
-  border-image: linear-gradient(
-      76deg,
+  height: 82vh;
+  border-image: linear-gradient(76deg,
       #ff0156 0.91%,
       #7707d7 31.46%,
       #00c6ee 71.57%,
-      #6e20f6 96.39%
-    )
-    1;
+      #6e20f6 96.39%) 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,6 +85,7 @@ main h1 {
   text-transform: uppercase;
   margin-top: 40%;
 }
+
 main h2 {
   color: #fff;
   text-align: center;
@@ -117,28 +114,31 @@ button:hover {
   box-shadow: 5px 5px 0 #66ec7f;
 }
 
-.rectangle1,
+/* .rectangle1,
 .rectangle2,
 .rectangle3,
 .rectangle4 {
   background-color: #000023;
   margin-bottom: 10px;
-}
+} */
 
-.rectangle1 {
+/* .rectangle1 {
   margin-top: 40px;
   height: 13px;
   width: 100%;
 }
+
 .rectangle2 {
   height: 35px;
   width: 100%;
 }
+
 .rectangle3 {
   height: 60px;
   width: 100%;
 }
+
 .rectangle4 {
   height: 150px;
   width: 100%;
-}
+} */
