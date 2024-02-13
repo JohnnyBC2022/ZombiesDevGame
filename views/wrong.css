@@ -195,5 +195,53 @@ main {
 }
 
 
+.lostPoints {
+  color: #ff0156; /* solo se aplicará al primer segmento de la línea */
+}
+
+.cardWin {
+  display: flex;
+  flex-direction: column;
+}
+
+.titleYouWin {
+  font-size: 100px;
+}
+
+.imgWin {
+  height: 200px;
+  width: 200px;
+}
+
+.optionButtonWinGame{
+  background-color: transparent;
+  border: 6px solid #fff;
+  color: #fff;
+  padding: 20px 30px;
+  font-family: "Pixelify Sans";
+  font-size: 40px;
+  cursor: pointer;
+  width: 400px;
+}
+
+.optionButtonWinGame:hover{
+  border: 6px solid #66EC7F;
+  color: #66EC7F;
+}
+
+.storyContentWin {
+  display: flex;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  color: #fff;
+}
+
+.storyContentWin p{
+  text-align: center;
+  font-size: 20px;
+}
 
 
