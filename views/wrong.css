@@ -28,22 +28,27 @@ body {
 header {
   margin: 20px 36px;
   height: 100px;
-  background: linear-gradient(88deg,
-      #6e20f6 0.91%,
-      #00c6ee 25.73%,
-      #7707d7 65.84%,
-      #ff0156 96.39%);
+  background: linear-gradient(
+    88deg,
+    #6e20f6 0.91%,
+    #00c6ee 25.73%,
+    #7707d7 65.84%,
+    #ff0156 96.39%
+  );
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 32px;
   text-transform: uppercase;
   border-bottom: solid 20px transparent;
-  border-image: linear-gradient(90deg,
+  border-image: linear-gradient(
+      90deg,
       #2f04ed 0%,
       #00c6ee 26%,
       #7707d7 68%,
-      #ff001d 100%) 1;
+      #ff001d 100%
+    )
+    1;
 }
 
 .headerLeft {
@@ -91,18 +96,21 @@ header ul li:hover {
 main {
   margin: 0 36px;
   border: 20px solid transparent;
-  border-image: linear-gradient(76deg,
+  border-image: linear-gradient(
+      76deg,
       #ff0156 0.91%,
       #7707d7 31.46%,
       #00c6ee 71.57%,
-      #6e20f6 96.39%) 1;
+      #6e20f6 96.39%
+    )
+    1;
   min-height: 82%;
   padding: 30px 0;
   display: flex;
   justify-content: center;
 }
 
-.panel{
+.panel {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,7 +120,7 @@ main {
 .game {
   z-index: 100;
   margin: auto;
-  width: 30%;
+  width: 100%;
 }
 
 .progressBar {
@@ -120,53 +128,60 @@ main {
   justify-content: space-between;
   align-items: center;
   color: #fff;
-  margin: 20px;
+  margin: 20px auto;
+  width: 30%;
 }
 
 .card {
+  background-image: url(../img/backgroundERROR.png);
+  position: relative;
+  background-size: 100% 100%;
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.card img{
-  width: 450px;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .storyContent {
-  width: 450px;
-  max-height: fit-content;
-  padding: 25px;
-  background-color: #181872;
   display: flex;
-  flex-direction: column;
+  padding: 40px;
   justify-content: space-between;
-  gap:10px;
+  align-items: center;
+  gap: 40px;
+  color: #fff;
+}
+
+.card img {
+  width: 300px;
+}
+
+.storyContent h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
 }
 
 .storyContent p {
-  color: #fff;
   font-size: 18px;
-  text-align: center;
 }
 
 .optionButton {
   background-color: transparent;
-  border: none;
-  font-family: "Pixelify Sans";
+  border: 6px solid #fff;
   color: #fff;
-  font-size: 18px;
-  text-decoration: underline;
+  padding: 20px 30px;
+  font-family: "Pixelify Sans";
+  font-size: 40px;
   cursor: pointer;
 }
 
 .optionButton:hover {
+  border: 6px solid #66EC7F;
   color: #66EC7F;
-}
-
-.introStory2 {
-  display: none;
 }
 
 .score {
@@ -179,46 +194,6 @@ main {
   margin: 10px 22px;
 }
 
-.reset {
-  background-color: transparent;
-  border: 6px solid #181872;
-  color: #181872;
-  padding: 20px 30px;
-  font-family: "Pixelify Sans";
-  font-size: 40px;
-  cursor: pointer;
-}
 
-.reset:hover {
-  border: 6px solid #ff0156;
-  color: #ff0156;
-}
 
-/* .rectangles {
-  width: 100%;
-}
 
-.rectangle1,
-.rectangle2,
-.rectangle3,
-.rectangle4 {
-  background-color: #000023;
-  margin-bottom: 10px;
-}
-
-.rectangle1 {
-  margin-top: 40px;
-  height: 13px;
-}
-
-.rectangle2 {
-  height: 35px;
-}
-
-.rectangle3 {
-  height: 60px;
-}
-
-.rectangle4 {
-  height: 150px;
-} */

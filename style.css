@@ -14,7 +14,7 @@ body {
   background-image: url(/img/background.jpg);
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
+  /* overflow: hidden;  hay que quitarlo al no ser responsivo debemos permitir hacer scroll en pantallas pequeñas*/
   font-family: "Pixelify Sans";
 }
 
