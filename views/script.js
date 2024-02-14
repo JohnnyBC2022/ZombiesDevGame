@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     continueButton.addEventListener('click', continueHandler);
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'b' || e.key === 'B') {
+        if (e.key === 'ArrowRight' ) {
             optionBButton.click();
-        } else if (e.key === 'a' || e.key === 'A') {
+        } else if (e.key === 'ArrowLeft' ) {
             optionAButton.click();
         }
     })
