@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap");
+
+:root{
+  --color-pink:#ff0156;
+  --color-green: #66ec7f;
+  --color-malva: #181872;
+}
+
+.gameResult {
+  z-index: 100;
+  margin: auto;
+  width: 100%;
+}
+
+.progressBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  margin: 20px auto;
+  width: 30%;
+}
+
+.cardResultRight {
+  background-image: url(../../img/backgroundOK.png);
+  position: relative;
+  background-size: 100% 100%;
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.cardResultWrong {
+  background-image: url(/img/backgroundERROR.png);
+  position: relative;
+  background-size: 100% 100%;
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.cardResultRight img, .cardResultWrong img {
+  width: 300px;
+}
+
+.storyResult {
+  display: flex;
+  padding: 40px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  color: #fff;
+}
+
+.storyResult h3 {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.storyResult p {
+  font-size: 20px;
+  max-width: 320px;
+}
+
+.continueButton {
+  background-color: transparent;
+  border: 6px solid #fff;
+  color: #fff;
+  padding: 20px 30px;
+  font-family: "Pixelify Sans";
+  font-size: 40px;
+  cursor: pointer;
+  margin-bottom:10px;
+}
+
+.continueButton:hover {
+  border: 6px solid var(--color-green);
+  color: var(--color-green);
+}
+
+.score {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+  font-size: 36px;
+  margin: 10px 22px;
+}
+
+/*A PARTIR DE AQUÍ PANTALLA WIN-GAME*/
+.cardWin {
+  display: flex;
+  flex-direction: column;
+}
+
+.titleYouWin {
+  font-size: 100px;
+}
+
+.imgWin {
+  height: 200px;
+  width: 200px;
+}
+
+.optionButtonWinGame{
+  background-color: transparent;
+  border: 6px solid #fff;
+  color: #fff;
+  padding: 20px 30px;
+  font-family: "Pixelify Sans";
+  font-size: 40px;
+  cursor: pointer;
+  width: 400px;
+}
+
+.optionButtonWinGame:hover{
+  border: 6px solid var(--color-green);
+  color: var(--color-green);
+}
+
+.storyContentWin {
+  display: flex;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  color: #fff;
+}
+
+.storyContentWin p{
+  text-align: center;
+  font-size: 20px;
+  max-width: 70%;
+}
+

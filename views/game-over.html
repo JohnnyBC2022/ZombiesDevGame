@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Zombie Devs" />
-    <link rel="stylesheet" href="story.css" />
-    <link rel="stylesheet" href="result.css" />
+    <link rel="stylesheet" href="story.css">
+    <link rel="stylesheet" href="game-over.css" />
     <title>Zombie Devs Game</title>
   </head>
   <body>
@@ -28,18 +28,17 @@
 
     <main>
       <section class="panel">
-        <div class="storyContentWin">
-          <h3 class="titleYouWin">¡YOU WIN!</h3>
-          <p>
-            Despiertas asustado. Todo era un sueño. Vas hacia la cocina para
-            hacerte una cafe y pisas tu patito de goma...
-            <br> 
-            (CONTINUARÁ...)
-          </p>
-          <img src="../img/patito.png" alt="ilustración patito de goma" />
-          <button class="optionButtonWinGame">JUGAR DE NUEVO</button>
-        </div>
-        <div class="score"></div>
+          
+        <div class="gameOverContent">
+            <h3>GAME OVER</h3>
+            <p>
+              Te has quedado sin patito
+            </p>
+            <img src="../img/logo.png" alt="logo zombie dev game" class="gameOver" />
+            <button class="optionButton">JUGAR DE NUEVO</button>
+          </div>
+        
+        <div class="score"></div>    
       </section>
     </main>
     <script src="script.js"></script>

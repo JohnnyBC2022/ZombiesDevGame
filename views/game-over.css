@@ -1,0 +1,42 @@
+
+.gameOverContent {
+  display: flex;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  color: #fff;
+}
+
+.gameOverContent h3 {
+  font-size: 80px;
+}
+
+.gameOverContent p{
+  text-align: center;
+  font-size: 24px;
+}
+
+.gameOverContent img{
+  width: 200px;
+}
+
+.optionButton {
+  background-color: transparent;
+  border: 6px solid #fff;
+  color: #fff;
+  padding: 20px 30px;
+  font-family: "Pixelify Sans";
+  font-size: 36px;
+  cursor: pointer;
+  margin-bottom:10px;
+}
+
+.optionButton:hover {
+  border: 6px solid var(--color-green);
+  color: var(--color-green);
+}
+
+
+

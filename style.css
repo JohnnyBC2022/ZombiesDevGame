@@ -9,8 +9,12 @@
   outline: none;
 }
 
+:root {
+  --color-pink:#ff0156;
+  --color-green: #66ec7f;
+}
+
 body {
-  /* background-color: #00000d; */
   background-image: url(/img/background.jpg);
   height: 100vh;
   width: 100vw;
@@ -99,46 +103,17 @@ main h2 {
 button {
   margin-top: 40px;
   background-color: transparent;
-  color: #66ec7f;
+  color: var(--color-green);
   font-size: 40px;
-  text-shadow: 5px 5px 0 #ff0156;
+  text-shadow: 5px 5px 0 var(--color-pink);
   padding: 20px;
-  border: 5px solid #66ec7f;
-  box-shadow: 5px 5px 0 #ff0156;
+  border: 5px solid var(--color-green);
+  box-shadow: 5px 5px 0 var(--color-pink);
   font-family: "Pixelify Sans";
 }
 
 button:hover {
   transform: translateY(2px);
-  border: 5px solid #ff0156;
-  box-shadow: 5px 5px 0 #66ec7f;
+  border: 5px solid var(--color-pink);
+  box-shadow: 5px 5px 0 var(--color-green);
 }
-
-/* .rectangle1,
-.rectangle2,
-.rectangle3,
-.rectangle4 {
-  background-color: #000023;
-  margin-bottom: 10px;
-} */
-
-/* .rectangle1 {
-  margin-top: 40px;
-  height: 13px;
-  width: 100%;
-}
-
-.rectangle2 {
-  height: 35px;
-  width: 100%;
-}
-
-.rectangle3 {
-  height: 60px;
-  width: 100%;
-}
-
-.rectangle4 {
-  height: 150px;
-  width: 100%;
-} */
