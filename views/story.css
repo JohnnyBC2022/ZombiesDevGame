@@ -9,8 +9,8 @@
   outline: none;
 }
 
-:root{
-  --color-pink:#ff0156;
+:root {
+  --color-pink: #ff0156;
   --color-green: #66ec7f;
   --color-malva: #181872;
 }
@@ -19,7 +19,7 @@ body {
   background-image: url(/img/background.jpg);
   height: 100vh;
   width: 100vw;
-  /* overflow: hidden; */
+  overflow: hidden;
   font-family: "Pixelify Sans";
 }
 
@@ -33,22 +33,27 @@ body {
 header {
   margin: 20px 36px;
   height: 100px;
-  background: linear-gradient(88deg,
-      #6e20f6 0.91%,
-      #00c6ee 25.73%,
-      #7707d7 65.84%,
-      #ff0156 96.39%);
+  background: linear-gradient(
+    88deg,
+    #6e20f6 0.91%,
+    #00c6ee 25.73%,
+    #7707d7 65.84%,
+    #ff0156 96.39%
+  );
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 32px;
   text-transform: uppercase;
   border-bottom: solid 20px transparent;
-  border-image: linear-gradient(90deg,
+  border-image: linear-gradient(
+      90deg,
       #2f04ed 0%,
       #00c6ee 26%,
       #7707d7 68%,
-      #ff001d 100%) 1;
+      #ff001d 100%
+    )
+    1;
 }
 
 .headerLeft {
@@ -97,18 +102,21 @@ header ul li:hover {
 main {
   margin: 0 36px;
   border: 20px solid transparent;
-  border-image: linear-gradient(76deg,
+  border-image: linear-gradient(
+      76deg,
       #ff0156 0.91%,
       #7707d7 31.46%,
       #00c6ee 71.57%,
-      #6e20f6 96.39%) 1;
+      #6e20f6 96.39%
+    )
+    1;
   min-height: 82%;
   padding: 30px 0;
   display: flex;
   justify-content: center;
 }
 
-.panel{
+.panel {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,7 +144,7 @@ main {
   align-items: center;
 }
 
-.card img{
+.card img {
   width: 450px;
 }
 
@@ -147,11 +155,28 @@ main {
   background-color: var(--color-malva);
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.introStoryContent {
+  width: 450px;
+  max-height: fit-content;
+  padding: 25px;
+  background-color: var(--color-malva);
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  gap:10px;
+  gap: 10px;
 }
 
 .storyContent p {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+
+.introStoryContent p {
   color: #fff;
   font-size: 18px;
   text-align: center;
