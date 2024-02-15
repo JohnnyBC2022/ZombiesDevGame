@@ -115,6 +115,19 @@ main {
   width: 80%;
 }
 
+.controls {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+}
+
+.controls p{
+  color: #4d4d92;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
 .game {
   z-index: 100;
   margin: auto;
