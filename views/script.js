@@ -1,40 +1,41 @@
 document.addEventListener('DOMContentLoaded', () => {
-    let continueButton = document.getElementById('continue');
-    let introStory2 = document.querySelector('.introStory2');
-    let storyContent = document.querySelector('.storyContent');
+  let continueButton = document.getElementById('continue');
+  let introStory2 = document.querySelector('.introStory2');
+  let storyContent = document.querySelector('.storyContent');
 
-    introStory2.style.display = 'none';
+  introStory2.style.display = 'none';
 
-    continueButton.addEventListener('click', continueHandler);
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowRight' ) {
-            optionBButton.click();
-        } else if (e.key === 'ArrowLeft' ) {
-            optionAButton.click();
-        }
-    })
+  continueButton.addEventListener('click', continueHandler);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight') {
+      optionBButton.click();
+    } else if (e.key === 'ArrowLeft') {
+      optionAButton.click();
+    }
+  })
 
-    let optionAButton = document.querySelector('.optionA');
-    let optionBButton = document.querySelector('.optionB');
+  let optionAButton = document.querySelector('.optionA');
+  let optionBButton = document.querySelector('.optionB');
 
-    function continueHandler() {
-        introStory2.style.display = 'block';
-        continueButton.style.display = 'none';
-        storyContent.innerHTML = '<p>Además tengo prácticamente acabado el juego, solo queda rematar cómo conseguir escapar y salir con vida de la casa… ¿Qué haces?</p><button class="optionA optionButton">A. Te acuestas tranquilamente en tu cama</button><button class="optionB optionButton">B. Sigues programando, aún puedes acabarlo</button>';
+  function continueHandler() {
+    introStory2.style.display = 'block';
+    continueButton.style.display = 'none';
+    storyContent.innerHTML = '<p>Además tengo prácticamente acabado el juego, solo queda rematar cómo conseguir escapar y salir con vida de la casa… ¿Qué haces?</p><button class="optionA optionButton">A. Te acuestas tranquilamente en tu cama</button><button class="optionB optionButton">B. Sigues programando, aún puedes acabarlo</button>';
 
-        optionAButton = document.querySelector('.optionA');
-        optionBButton = document.querySelector('.optionB');
-        // Ahora tenemos dos opciones, una más fácil y larga y otra mediante el empleo de AJAX, pero eso tengo que mirarlo y quizás es más difícil de explicar. Aunque sea un rollo, yo tiraría por aquí.
+    optionAButton = document.querySelector('.optionA');
+    optionBButton = document.querySelector('.optionB');
+    // Ahora tenemos dos opciones, una más fácil y larga y otra mediante el empleo de AJAX, pero eso tengo que mirarlo y quizás es más difícil de explicar. Aunque sea un rollo, yo tiraría por aquí.
 
-        optionAButton.addEventListener('click', function () {
+    optionAButton.addEventListener('click', function () {
 
-            document.body.innerHTML = `<!DOCTYPE html>
+      document.body.innerHTML = `<!DOCTYPE html>
         <html lang="es">
           <head>
             <meta charset="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta name="author" content="Zombie Devs" />
-            <link rel="stylesheet" href="right.css" />
+            <link rel="stylesheet" href="../story.css" />
+    <link rel="stylesheet" href="../result.css" />
             <title>Zombie Devs Game</title>
           </head>
           <body>
@@ -127,14 +128,14 @@ document.addEventListener('DOMContentLoaded', () => {
             <script src="script.js"></script>
           </body>
         </html>`;
-        });
+    });
 
 
 
 
-        optionBButton.addEventListener('click', () => {
-            document.body.innerHTML =
-                `<!DOCTYPE html>
+    optionBButton.addEventListener('click', () => {
+      document.body.innerHTML =
+        `<!DOCTYPE html>
             <html lang="es">
               <head>
                 <meta charset="UTF-8" />
@@ -235,8 +236,8 @@ document.addEventListener('DOMContentLoaded', () => {
               </body>
             </html>
             `
-        });
+    });
 
 
-    }
+  }
 });
