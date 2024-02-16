@@ -117,3 +117,10 @@ button:hover {
   border: 5px solid var(--color-pink);
   box-shadow: 5px 5px 0 var(--color-green);
 }
+
+.start{
+  font-size: 24px;
+  text-align: center;
+  color:#4d4d92;
+  margin-top:20px;
+}
