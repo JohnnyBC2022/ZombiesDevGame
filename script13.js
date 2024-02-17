@@ -1,22 +1,21 @@
-
 document.addEventListener("keydown", function (event) {
   if (event.key === "ArrowLeft") {
-    redireccionar("../wrong-cards/room-wrong.html");
+    redireccionar("../wrong-cards/outdoor-wrong.html");
   } else if (event.key === "ArrowRight") {
-    redireccionar("../right-cards/room-right.html");
+    redireccionar("../right-cards/outdoor-right.html");
   }
 });
 
 function redireccionar(ruta) {
-  if (ruta === "../right-cards/room-right.html") {
+  if (ruta === "../right-cards/outdoor-right.html") {
     const puntosActuales = obtenerPuntos();
     guardarPuntos(puntosActuales);
-  } else if (ruta === "../wrong-cards/room-wrong.html") {
-    const puntosActuales = obtenerPuntos() - 200;
+  } else if (ruta === "../wrong-cards/outdoor-wrong.html") {
+    const puntosActuales = obtenerPuntos() - 1000;
     guardarPuntos(puntosActuales);
   }
 
-  window.location.href = ruta; 
+  window.location.href = ruta;
 }
 
 function obtenerPuntos() {
