@@ -4,6 +4,8 @@ document.addEventListener("keydown", function (event) {
     redireccionar("../wrong-cards/room-wrong.html");
   } else if (event.key === "ArrowRight") {
     redireccionar("../right-cards/room-right.html");
+  } else if (event.key === "Enter") {
+    window.location.href = "../story/story-room.html";
   }
 });
 
@@ -16,7 +18,7 @@ function redireccionar(ruta) {
     guardarPuntos(puntosActuales);
   }
 
-  window.location.href = ruta; 
+  window.location.href = ruta;
 }
 
 function obtenerPuntos() {
@@ -30,3 +32,14 @@ function guardarPuntos(puntos) {
 const puntosActuales = obtenerPuntos();
 const puntosElement = document.getElementById("points");
 puntosElement.textContent = puntosActuales;
+
+document.addEventListener("DOMContentLoaded", function () {
+  const resetButton = document.querySelector(".reset");
+  resetButton.addEventListener("click", function () {
+    reiniciarJuego();
+  });
+});
+
+function reiniciarJuego() {
+  window.location.href = "../../index.html";
+}

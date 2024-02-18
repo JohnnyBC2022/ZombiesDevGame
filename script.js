@@ -7,9 +7,19 @@ document.addEventListener("keydown", function (event) {
 function guardarPuntos(puntos) {
   localStorage.setItem("puntos", puntos);
 }
-// Inicializamos los puntos al empezar el juego
-guardarPuntos(1000);
 
+let puntuacionInicial = 1000;
+guardarPuntos(puntuacionInicial);
 
+document.addEventListener("DOMContentLoaded", function () {
+  const resetButton = document.querySelector(".reset");
+  resetButton.addEventListener("click", function () {
+    reiniciarJuego();
+  });
+});
+
+function reiniciarJuego() {
+  window.location.href = "../index.html";
+}
 
 

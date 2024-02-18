@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap");
 
-:root{
-  --color-pink:#ff0156;
+:root {
+  --color-pink: #ff0156;
   --color-green: #66ec7f;
   --color-malva: #181872;
 }
@@ -51,7 +51,8 @@
   margin: 0 auto;
 }
 
-.cardResultRight img, .cardResultWrong img {
+.cardResultRight img,
+.cardResultWrong img {
   width: 300px;
 }
 
@@ -82,7 +83,7 @@
   font-family: "Pixelify Sans";
   font-size: 24px;
   cursor: pointer;
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
 
 .continueButton:hover {
@@ -115,7 +116,7 @@
   width: 200px;
 }
 
-.optionButtonWinGame{
+.optionButtonWinGame {
   background-color: transparent;
   border: 6px solid #fff;
   color: #fff;
@@ -126,7 +127,7 @@
   width: 400px;
 }
 
-.optionButtonWinGame:hover{
+.optionButtonWinGame:hover {
   border: 6px solid var(--color-green);
   color: var(--color-green);
 }
@@ -141,9 +142,8 @@
   color: #fff;
 }
 
-.storyContentWin p{
+.storyContentWin p {
   text-align: center;
   font-size: 20px;
   max-width: 70%;
 }
-

@@ -24,7 +24,7 @@ function redireccionar(ruta) {
     guardarPuntos(puntosActuales);
   }
 
-  window.location.href = ruta; 
+  window.location.href = ruta;
 }
 
 function obtenerPuntos() {
@@ -38,3 +38,15 @@ function guardarPuntos(puntos) {
 const puntosActuales = obtenerPuntos();
 const puntosElement = document.getElementById("points");
 puntosElement.textContent = puntosActuales;
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const resetButton = document.querySelector(".reset");
+  resetButton.addEventListener("click", function () {
+    reiniciarJuego();
+  });
+});
+
+function reiniciarJuego() {
+  window.location.href = "../index.html";
+}

@@ -1,77 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Zombie Devs" />
-  <link rel="stylesheet" href="../story.css" />
-  <link rel="stylesheet" href="../result.css" />
-  <title>Zombie Devs Game</title>
-</head>
-<body>
-  <header>
-    <a href="../../index.html">
-      <ul class="headerLeft">
-        <li></li>
-        <li>Inicio</li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Zombie Devs" />
+    <link rel="stylesheet" href="../story.css" />
+    <link rel="stylesheet" href="../result.css" />
+    <title>Zombie Devs Game</title>
+  </head>
+  <body>
+    <header>
+      <a href="../../index.html">
+        <ul class="headerLeft">
+          <li></li>
+          <li>Inicio</li>
+        </ul>
+      </a>
+      <ul class="headerCenter">
+        <li>&lt;Zombie devs/&gt; Game</li>
       </ul>
-    </a>
-    <ul class="headerCenter">
-      <li>&lt;Zombie devs/&gt; Game</li>
-    </ul>
-    <ul class="headerRight">
-      <li>&lt;CODE/&gt;</li>
-      <li>CREDITS</li>
-    </ul>
-  </header>
-  <div class="headerBorder"></div>
+      <ul class="headerRight">
+        <li>&lt;CODE/&gt;</li>
+        <li>CREDITS</li>
+      </ul>
+    </header>
+    <div class="headerBorder"></div>
 
-  <main>
-    <section class="panel">
-      <div class="gameResult">
-        <div class="progressBar">
-          <img src="../../img/ZombieHead.png" alt="zombie head" />
-          <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
-            <rect width="15" height="15" fill="#66EC7F" />
-          </svg>
-          <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
-            <rect width="15" height="15" fill="#66EC7F" />
-          </svg>
-          <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
-            <rect width="15" height="15" fill="#66EC7F" />
-          </svg>
-          <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
-            <rect width="15" height="15" fill="#66EC7F" />
-          </svg>
-          <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
-            <rect width="15" height="15" fill="#66EC7F" />
-          </svg>
-          <img src="../../img/Runner.png" alt="character" />
-          <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
-            <rect width="15" height="15" fill="#2692C3" />
-          </svg>
-        </div>
-        <div class="cardResultRight">
-          <div class="storyResult">
-            <img src="../../img/computerOK.png" alt="icono computer ok" />
-            <div>
-              <h3>¡BIEN HECHO!</h3>
-              <p>
-                Genial, saliste de la casa, pero sin llaves.
-              </p>
-            </div>
+    <main>
+      <section class="panel">
+        <div class="gameResult">
+          <div class="progressBar">
+            <img src="../../img/ZombieHead.png" alt="zombie head" />
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="15" height="15" fill="#66EC7F" />
+            </svg>
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="15" height="15" fill="#66EC7F" />
+            </svg>
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="15" height="15" fill="#66EC7F" />
+            </svg>
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="15" height="15" fill="#66EC7F" />
+            </svg>
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="15" height="15" fill="#66EC7F" />
+            </svg>
+            <img src="../../img/Runner.png" alt="character" />
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="15" height="15" fill="#2692C3" />
+            </svg>
           </div>
-          <button class="continueButton">Pulsa ENTER para continuar</button>
+          <div class="cardResultRight">
+            <div class="storyResult">
+              <img src="../../img/computerOK.png" alt="icono computer ok" />
+              <div>
+                <h3>¡BIEN HECHO!</h3>
+                <p>Genial, saliste de la casa, pero sin llaves.</p>
+              </div>
+            </div>
+            <button class="continueButton">Pulsa ENTER para continuar</button>
+          </div>
+          <div class="score">
+            <img src="../../img/coffee.png" alt="taza de café" />
+            <p>Coffee:</p>
+            <p id="points">1000</p>
+          </div>
         </div>
-        <div class="score">
-          <img src="../../img/coffee.png" alt="taza de café" />
-          <p>Coffee:</p>
-          <p id="points">1000</p>
-        </div>
-      </div>
-    </section>
-  </main>
-  <script src="../../script12.js"></script>
-</body>
-
+      </section>
+    </main>
+    <script src="../../script12.js"></script>
+  </body>
 </html>
