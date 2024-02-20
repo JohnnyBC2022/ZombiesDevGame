@@ -1,5 +1,7 @@
 # Zombie Devs - el juego
 
+![Zombie Dev Game](./img/logo.png)
+
 ### Desarrollado por:
 
 - Oliver Casiano [Linkedin](https://www.linkedin.com/in/olicasiano/) - [Github](https://github.com/OliCasiano)
